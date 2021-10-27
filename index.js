@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+/* const mongoose = require('mongoose'); */
 
 const app = express();
 
@@ -22,6 +23,7 @@ const Products = [{
     type: "Orther",
 },];
 
+// set api
 app.get('/products',(req,res)=>{
     res.status(200).json({products:Products})
 })
@@ -34,6 +36,15 @@ app.post('/products',(req,res)=>{
 
     res.status(201).json({mess: "Products is added to the database"})
 })
+
+// connect Database
+/* const dbUserName = "admin";
+const dbPw = "1";
+const dbName = "test";
+const MONGO_URI=`mongodb+srv://${dbUserName}:${dbPw}@cluster0.5zjmf.mongodb.net/${dbName}`;
+mongoose.connect(MONGO_URI,() => {
+    console.log('Connect  to DB')
+}) */
 
 app.listen(port,()=>{
     console.log(`Listening at http://localhost:${port}`)
