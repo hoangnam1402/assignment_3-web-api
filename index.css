@@ -4,12 +4,11 @@
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(255, 255, 193);
 }
-a{
-    background: #212121;
+h1{
     padding: 100px 200px;
     text-decoration: none;
     font-weight: bold;
-    color: #fff;
+    color: black;
     display: inline-block;
     margin: 15% 35%;
 }
