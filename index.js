@@ -38,13 +38,7 @@ app.post('/products',(req,res)=>{
 })
 
 // connect Database
-/* const dbUserName = "admin";
-const dbPw = "1";
-const dbName = "test";
-const MONGO_URI=`mongodb+srv://${dbUserName}:${dbPw}@cluster0.5zjmf.mongodb.net/${dbName}`;
-mongoose.connect(MONGO_URI,() => {
-    console.log('Connect  to DB')
-}) */
+
 
 app.listen(port,()=>{
     console.log(`Listening at http://localhost:${port}`)
