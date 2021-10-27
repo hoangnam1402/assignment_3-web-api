@@ -14,9 +14,9 @@ app.use(bodyParser.json());
 
 app.get('/',(req,res)=>{
     res.send('Hello');
-})
+});
 
-require('./app/routes')(app);
+require('./app/products')(app);
 
 app.listen(port,()=>{
     console.log(`Listening at http://localhost:${port}`)
