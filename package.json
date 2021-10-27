@@ -1,0 +1,26 @@
+{
+  "name": "assignment_3",
+  "version": "1.0.0",
+  "description": "nodejs, apirest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangnam1402/assignment_3-static-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoangnam1402/assignment_3-static-web/issues"
+  },
+  "homepage": "https://github.com/hoangnam1402/assignment_3-static-web#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
